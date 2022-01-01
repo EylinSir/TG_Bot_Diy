@@ -30,25 +30,7 @@ async def activity(event):
             name = '组队瓜分京豆'
             from ..diy.diy import smiek_jd_zdjr
             await smiek_jd_zdjr()
-            cmd = f'{TASK_CMD} /jd/own/gua_zdjr.js now'
-        elif "joinTeam" in event.message.text:
-            name = '组队瓜分京豆2'
-            cmd = f'{TASK_CMD} /jd/own/gua_joinTeam.js now'
-        elif "FAV" in event.message.text:
-            name = '收藏有礼'
-            cmd = f'{TASK_CMD} /jd/own/jd_fav_shop_gift.js now'
-        elif "ISV" in event.message.text:
-            name = '特效关注有礼'
-            cmd = f'{TASK_CMD} /jd/own/jd_follow_wxshop_gift.js now'
-        elif "OPEN_CARD" in event.message.text:
-            name = '会员开卡'
-            cmd = f'{TASK_CMD} /jd/own/jd_open_card_by_shopid.js now'
-        elif "addCart" in event.message.text:
-            name = '加购有礼'
-            cmd = f'{TASK_CMD} /jd/own/gua_addCart.js now'
-        elif "luckDraw" in event.message.text:
-            name = '抽奖有礼'
-            cmd = f'{TASK_CMD} /jd/own/gua_luckDraw.js now'
+            cmd = f'{TASK_CMD} /jd/own/smile_zdjr.js now'
         else:
             return
         messages = event.message.raw_text.split("\n")
